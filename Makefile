@@ -10,8 +10,8 @@ CXXFLANGS = -ggdb\
 			-std=c++20
 
 
-main.o:
-	$(CXX) $(CXXFLANGS) -o $@ -s ./main.cpp
+main:
+	$(CXX) $(CXXFLANGS) -o $@.o -s ./main.cpp
 
 clean:
 	rm -r ./main.o
